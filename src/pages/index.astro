@@ -2,9 +2,11 @@
 import About from "@components/About/About.astro";
 import Button from "@components/Button/Button.astro";
 import Contact from "@components/Contact/Contact.astro";
+import EnfoqueYProcesos from "@components/EnfoqueYProcesos/EnfoqueYProcesos.astro";
 import FeatureNumbers from "@components/Feature/FeatureNumbers.astro";
 // components
 import Hero from "@components/Hero/Hero.astro";
+import IniciarTerapia from "@components/IniciarTerapia/IniciarTerapia.astro";
 import PortfolioThreeCards from "@components/Portfolio/PortfolioThreeCards.astro";
 import PricingThreeCards from "@components/Pricing/PricingThreeCards.astro";
 import Testimonials from "@components/Testimonials/Testimonials.astro";
@@ -17,10 +19,12 @@ import { Image } from "astro:assets";
 
 <BaseLayout title={siteData.title} description={siteData.description} navStartStyle="white">
 	<Hero />
-	<FeatureNumbers />
-	<PortfolioThreeCards />
-	<Testimonials />
-	<PricingThreeCards />
+	<!-- <FeatureNumbers /> -->
+	<EnfoqueYProcesos />
 	<About />
+	<IniciarTerapia />
+	<PricingThreeCards />
+	<!-- <PortfolioThreeCards /> -->
+	<Testimonials />
 	<Contact />
 </BaseLayout>
