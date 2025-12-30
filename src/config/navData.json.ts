@@ -14,38 +14,42 @@ export type navItem = navLinkItem | navDropdownItem;
 // note: 1 level of dropdown is supported
 const navConfig: navItem[] = [
 	{
-		text: "Home",
-		link: "/",
+		text: "Procesos",
+		link: "/#procesos",
 	},
 	{
-		text: "portfolios",
-		link: "/portfolio/",
+		text: "Sobre mí",
+		link: "/#about",
 	},
 	{
-		text: "Pricing",
-		link: "/#pricing",
+		text: "Tarifas",
+		link: "/#tarifas",
 	},
 	{
-		text: "Pages",
-		dropdown: [
-			{
-				text: "Portfolio",
-				link: "/portfolio/couple-1/",
-			},
-			{
-				text: "Legal",
-				link: "/privacy-policy/",
-			},
-			{
-				text: "Elements",
-				link: "/elements/",
-			},
-			{
-				text: "404",
-				link: "/not-a-link/",
-			},
-		],
+		text: "Contacto",
+		link: "/#contact",
 	},
+	// {
+	// 	text: "Pages",
+	// 	dropdown: [
+	// 		{
+	// 			text: "Portfolio",
+	// 			link: "/portfolio/couple-1/",
+	// 		},
+	// 		{
+	// 			text: "Legal",
+	// 			link: "/privacy-policy/",
+	// 		},
+	// 		{
+	// 			text: "Elements",
+	// 			link: "/elements/",
+	// 		},
+	// 		{
+	// 			text: "404",
+	// 			link: "/not-a-link/",
+	// 		},
+	// 	],
+	// },
 ];
 
 export default navConfig;
