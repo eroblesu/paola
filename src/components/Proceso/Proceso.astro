@@ -1,0 +1,24 @@
+---
+interface Props {
+	title: string;
+	description: string;
+	icon?: string;
+}
+
+const { title, description, icon } = Astro.props;
+console.log(icon);
+---
+
+<div class="proceso-card flex items-start gap-4">
+	<div class="icon flex-shrink-0">
+		{
+			icon ? (
+				<img src={icon} alt={title} class="h-12 w-12 rounded-lg object-cover" />
+			) : null
+		}
+	</div>
+	<div class="content">
+		<h3 class="m-0 mb-2 text-lg">{title}</h3>
+		<p class="m-0 text-sm text-gray-600">{description}</p>
+	</div>
+</div>

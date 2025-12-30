@@ -14,6 +14,7 @@ interface Props {
 
 const { testimonial, imagePosition = "top" } = Astro.props as Props;
 const { title, testimonial: testimonialText, image } = testimonial.data;
+console.log(image);
 ---
 
 <div class="grid gap-1 lg:auto-rows-fr">

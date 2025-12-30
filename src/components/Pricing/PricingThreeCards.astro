@@ -62,6 +62,8 @@ const pricingData: pricingItem[] = [
 	<div class="mx-auto max-w-6xl text-center">
 		<h2 class="h2 text-pretty uppercase">Tarifas y servicios</h2>
 	</div>
+	<p class="mt-6 text-pretty lg:text-lg">*Las sesiones serán abonadas al comenzar o al terminar la sesión.</p>
+	<p class="mt-1 text-pretty lg:text-lg">*Las citas que no se cancelen con 24 horas de antelación deberán ser abonadas.</p>
 
 	<!-- works for 3 pricing plans, adjust grid cols here to support more or less -->
 	<div
@@ -90,13 +92,13 @@ const pricingData: pricingItem[] = [
 					</div> */}
 					<div class="border-primary-200 flex h-full flex-col justify-between border-2 pt-10 pb-10">
 						<div>
-							<h3 class="h2 text-center">{plan.name}</h3>
+							<h3 class="h3 text-center">{plan.name}</h3>
 
-							<ul class="mt-4 flex flex-col gap-3 px-8">
+							{/* <ul class="mt-4 flex flex-col gap-3 px-8">
 								{plan.features.map((feature) => (
 									<li class="leading-snug lg:text-lg lg:leading-snug">{feature}</li>
 								))}
-							</ul>
+							</ul> */}
 						</div>
 						<p class="font-decorative text-base-800 mt-6 flex justify-center text-center text-[5rem] leading-none">
 							{plan.price}€
@@ -107,8 +109,8 @@ const pricingData: pricingItem[] = [
 			))
 		}
 	</div>
-
+<!-- 
 	<div class="mt-12 flex justify-center">
 		<Button href="/#contact" variant="outline" class="px-8">Get a quote</Button>
-	</div>
+	</div> -->
 </section>

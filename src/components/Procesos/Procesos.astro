@@ -6,7 +6,10 @@
 
 import Button from "@components/Button/Button.astro";
 import PortfolioCard from "@components/PortfolioCard/PortfolioCard.astro";
+import Proceso from "@components/Proceso/Proceso.astro";
 import { getCollection } from "astro:content";
+
+const svgUrlMap = import.meta.glob("/src/data/procesos/**/*.svg", { as: "url", eager: true });
 
 const procesos = await getCollection("procesos");
 
@@ -21,9 +24,32 @@ const sortedProcesos = procesos.sort((a, b) => {
 });
 ---
 
-<section id="portfolio" class="site-container mt-12 scroll-mt-10 py-8 md:py-12">
+<section id="portfolio" class="mt-12 scroll-mt-10 py-8 md:py-12">
 	<div class="mx-auto max-w-6xl text-center">
 		<h3 class="h3 text-pretty uppercase">Procesos.</h3>
 	</div>
-	<div class="grid gap-10 pt-8 md:grid-cols-2 md:pt-12">grid de procesos</div>
+	<div class="grid gap-10 justify-items-center pt-8 sm:grid-cols-2 sm:pt-8 md:grid-cols-3 md:pt-12 lg:grid-cols-4">
+		{
+            sortedProcesos.map((proceso) => {
+                const iconRef = proceso.data.icon as string | undefined; // e.g. "./icon.svg"
+                let iconUrl: string | undefined;
+
+                if (iconRef && iconRef.toLowerCase().endsWith(".svg")) {
+                    const rel = iconRef.replace(/^\.\//, "");
+                    const filePath = (proceso as any).filePath || ""; // e.g. "src/data/procesos/proceso-1/index.md"
+                    const dir = filePath.replace(/index\.mdx?$|index\.md$/i, "") || `src/data/procesos/${(proceso as any).slug || proceso.id}/`;
+                    const abs = `/${dir}${rel}`.replace(/\\/g, "/"); // matches import.meta.glob keys like "/src/data/procesos/proceso-1/icon.svg"
+                    iconUrl = (svgUrlMap as any)[abs] ?? (svgUrlMap as any)[`/src/data/procesos/${rel}`];
+                }
+
+                return (
+                    <Proceso
+                        title={proceso.data.title}
+                        description={proceso.data.description}
+                        icon={iconUrl}
+                    />
+                );
+            })
+		}
+	</div>
 </section>

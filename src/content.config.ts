@@ -47,6 +47,23 @@ const testimonials = defineCollection({
 		}),
 });
 
+// procesos
+const procesos = defineCollection({
+    // type: "content",
+    loader: glob({
+        pattern: "**/[^_]*.{md,mdx}",
+        base: "./src/data/procesos",
+    }),
+    schema: () =>
+        z.object({
+            title: z.string(),
+            description: z.string(),
+            // keep a simple relative-path string in frontmatter (e.g. "./icon.svg")
+            icon: z.string().optional(),
+            order: z.number(),
+        }),
+});
+
 // other pages
 const otherPages = defineCollection({
 	// type: "content",
@@ -65,5 +82,6 @@ const otherPages = defineCollection({
 export const collections = {
 	portfolios,
 	testimonials,
+	procesos,
 	otherPages,
 };
