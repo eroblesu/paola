@@ -1,6 +1,6 @@
 ---
-title: Proceso 6
+title: Insatisfacción corporal y TCA
 description: Descripcion del proceso 6
-icon: ./couple-8-crop.jpg
+icon: ./icon6.svg
 order: 6
 ---

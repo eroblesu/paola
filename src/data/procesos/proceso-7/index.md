@@ -1,6 +1,6 @@
 ---
-title: Proceso 7
+title: Dependencia emocional
 description: Descripcion del proceso 7
-icon: ./couple-8-crop.jpg
+icon: ./icon7.svg
 order: 7
 ---

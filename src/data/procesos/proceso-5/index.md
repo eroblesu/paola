@@ -1,6 +1,6 @@
 ---
-title: Proceso 5
+title: Fobias y miedos irracionales
 description: Descripcion del proceso 5
-icon: ./couple-8-crop.jpg
+icon: ./icon5.svg
 order: 5
 ---

@@ -1,0 +1,15 @@
+<svg width="64px" height="64px" viewBox="0 0 32 32" version="1.1"
+    xmlns="http://www.w3.org/2000/svg">
+    <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M4,10 C8,9 12,14 16,15 C20,16 24,14 28,14" stroke="#8FC0A9" stroke-width="2.5"></path>
+
+        <path d="M4,22 C8,23 12,18 16,19 C20,20 24,18 28,18" stroke="#A8D5BA" stroke-width="2" stroke-dasharray="3,2"></path>
+
+        <path d="M16,15 C16,15 17,17 16,19" stroke="#CBEAC8" stroke-width="2"></path>
+
+        <g fill="#8FC0A9" stroke="none">
+            <circle cx="26" cy="14" r="1"></circle>
+            <circle cx="26" cy="18" r="1" fill="#A8D5BA"></circle>
+        </g>
+    </g>
+</svg>

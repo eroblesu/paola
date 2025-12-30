@@ -1,6 +1,6 @@
 ---
-title: Proceso 8
+title: Regulación emocional
 description: Descripcion del proceso 8
-icon: ./couple-8-crop.jpg
-order: 8
+icon: ./icon8.svg
+order: 2
 ---
