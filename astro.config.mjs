@@ -5,6 +5,7 @@ import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
 import AutoImport from "astro-auto-import";
 import icon from "astro-icon"; // https://www.astroicon.dev/guides/upgrade/v1/
+import path from "path";
 
 // https://astro.build/config
 export default defineConfig({
@@ -54,15 +55,15 @@ export default defineConfig({
 		},
 		resolve: {
 			alias: {
-					"@config/*": ["src/config/*"],
-					"@js/*": ["src/js/*"],
-					"@layouts/*": ["src/layouts/*"],
-					"@components/*": ["src/components/*"],
-					"@assets/*": ["src/assets/*"],
-					"@images/*": ["src/assets/images/*"],
-					"@videos/*": ["src/assets/videos/*"],
-					"@/*": ["src/*"]
-			}
-		}
+				"@config": path.resolve("./src/config"),
+				"@js": path.resolve("./src/js"),
+				"@layouts": path.resolve("./src/layouts"),
+				"@components": path.resolve("./src/components"),
+				"@assets": path.resolve("./src/assets"),
+				"@images": path.resolve("./src/assets/images"),
+				"@videos": path.resolve("./src/assets/videos"),
+				"@": path.resolve("./src"),
+			},
+		},
 	},
 });
