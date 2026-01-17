@@ -29,27 +29,6 @@ const navConfig: navItem[] = [
 		text: "Contacto",
 		link: "/#contact",
 	},
-	// {
-	// 	text: "Pages",
-	// 	dropdown: [
-	// 		{
-	// 			text: "Portfolio",
-	// 			link: "/portfolio/couple-1/",
-	// 		},
-	// 		{
-	// 			text: "Legal",
-	// 			link: "/privacy-policy/",
-	// 		},
-	// 		{
-	// 			text: "Elements",
-	// 			link: "/elements/",
-	// 		},
-	// 		{
-	// 			text: "404",
-	// 			link: "/not-a-link/",
-	// 		},
-	// 	],
-	// },
 ];
 
 export default navConfig;
