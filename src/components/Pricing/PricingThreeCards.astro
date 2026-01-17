@@ -23,7 +23,7 @@ const pricingData: pricingItem[] = [
 	{
 		name: "Online",
 		featured: false,
-		price: 60,
+		price: 65,
 		features: [
 			"200+ Professionally Edited Photos",
 			"Private Online Gallery",
@@ -47,7 +47,7 @@ const pricingData: pricingItem[] = [
 	{
 		name: "Pareja",
 		featured: false,
-		price: 90,
+		price: 80,
 		features: [
 			"100+ Professionally Edited Photos",
 			"Private Online Gallery",
@@ -62,12 +62,9 @@ const pricingData: pricingItem[] = [
 	<div class="mx-auto max-w-6xl text-center">
 		<h2 class="h2 text-pretty uppercase">Tarifas y servicios</h2>
 	</div>
-	<p class="mt-6 text-pretty lg:text-lg">*Las sesiones serán abonadas al comenzar o al terminar la sesión.</p>
-	<p class="mt-1 text-pretty lg:text-lg">*Las citas que no se cancelen con 24 horas de antelación deberán ser abonadas.</p>
-
 	<!-- works for 3 pricing plans, adjust grid cols here to support more or less -->
 	<div
-		class="mx-auto grid w-full max-w-md xs:gap-5 md:gap-10 pt-8 sm:max-w-none sm:grid-cols-2 md:pt-12 lg:grid-cols-3"
+		class="xs:gap-5 mx-auto grid w-full max-w-md pt-8 sm:max-w-none sm:grid-cols-2 md:gap-10 md:pt-12 lg:grid-cols-3"
 	>
 		{
 			pricingData.map((plan) => (
@@ -101,15 +98,20 @@ const pricingData: pricingItem[] = [
 							</ul> */}
 						</div>
 						<p class="font-decorative text-base-800 mt-6 flex justify-center text-center text-[5rem] leading-none">
-							{plan.price}€
-							{/* <span class="flex h-full text-[3.5rem]">+</span> */}
+							{plan.price}€{/* <span class="flex h-full text-[3.5rem]">+</span> */}
 						</p>
 					</div>
 				</div>
 			))
 		}
 	</div>
-<!-- 
+	<p class="mt-6 text-pretty lg:text-lg">
+		* Las sesiones serán abonadas antes del comienzo de las mismas.
+	</p>
+	<p class="mt-1 text-pretty lg:text-lg">
+		* La cancelación o modificación de las citas debe realizarse con al menos 24 horas de antelación. En caso contrario, habrá de abonarse el importe total de la sesión.
+	</p>
+	<!-- 
 	<div class="mt-12 flex justify-center">
 		<Button href="/#contact" variant="outline" class="px-8">Get a quote</Button>
 	</div> -->

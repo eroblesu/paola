@@ -14,7 +14,6 @@ interface Props {
 
 const { testimonial, imagePosition = "top" } = Astro.props as Props;
 const { title, testimonial: testimonialText, image } = testimonial.data;
-console.log(image);
 ---
 
 <div class="grid gap-1 lg:auto-rows-fr">
@@ -51,7 +50,7 @@ console.log(image);
 			<hr class="border-primary-400 mt-4 mb-6 w-1/2 border-1" />
 		</div>
 
-		<h3 class="h3 tracking-widest">{title}</h3>
-		<p class="mt-6 text-pretty lg:text-lg">{testimonialText}</p>
+		<p class="text-pretty lg:text-lg">{testimonialText}</p>
+		<h3 class="h4 mt-4 tracking-widest">- {title} -</h3>
 	</div>
 </div>

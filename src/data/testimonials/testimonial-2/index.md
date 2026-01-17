@@ -1,6 +1,6 @@
 ---
-title: HANNAH & MARCO
-testimonial: Hiring Jenna was one of the best decisions we made for our wedding. Not only was their work incredibly professional and artistic, but they also made us feel so comfortable and at ease throughout the entire process.
+title: MIRIAM
+testimonial: Mi experiencia con Paola está siendo muy buena, cercana y enriquecedora desde el principio, haciendo de las consultas un lugar seguro en el que se puede hablar de cualquier tema con total tranquilidad.
 image: ./couple-2-crop.jpg
-order: 1
+order: 4
 ---
