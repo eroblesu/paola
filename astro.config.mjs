@@ -52,5 +52,17 @@ export default defineConfig({
 		build: {
 			assetsInlineLimit: 0,
 		},
+		resolve: {
+			alias: {
+					"@config/*": ["src/config/*"],
+					"@js/*": ["src/js/*"],
+					"@layouts/*": ["src/layouts/*"],
+					"@components/*": ["src/components/*"],
+					"@assets/*": ["src/assets/*"],
+					"@images/*": ["src/assets/images/*"],
+					"@videos/*": ["src/assets/videos/*"],
+					"@/*": ["src/*"]
+			}
+		}
 	},
 });
