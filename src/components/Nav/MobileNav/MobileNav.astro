@@ -72,6 +72,7 @@ import { Icon } from "astro-icon/components";
 	let mobileNavContent: HTMLElement | null;
 	let mobileNavCloseBtn: HTMLElement | null;
 	let mobileNavBackdrop: HTMLElement | null;
+	let mobileNavItems: HTMLCollection | undefined;
 
 	function toggleMobileNav(event: Event) {
 		if (mobileNavBurger && mobileNavContent && mobileNavContainer && mobileNavBackdrop)
@@ -111,6 +112,26 @@ import { Icon } from "astro-icon/components";
 		return false;
 	}
 
+	function closeNavOnNavItemClick(event: Event) {
+		// Close the nav but allow link navigation (no preventDefault)
+		if (mobileNavContainer && mobileNavContent && mobileNavBackdrop && mobileNavBurger) {
+			mobileNavContainer.classList.remove("open");
+			mobileNavBurger.setAttribute("aria-expanded", "false");
+
+			// mobile nav content drawer
+			mobileNavContent.classList.remove("mobile-nav--slide-in");
+			mobileNavContent.classList.add("mobile-nav--slide-out");
+			// make hidden after the slide out effect is done
+			setTimeout(() => {
+				mobileNavContent?.classList.add("hidden");
+			}, 300);
+
+			// backdrop button
+			mobileNavBackdrop.classList.remove("mobile-nav__backdrop--fade-in");
+			mobileNavBackdrop.classList.add("mobile-nav__backdrop--fade-out");
+		}
+	}
+
 	function initMobileNav() {
 		// every time a view transition or page load occurs, we need to init these variables
 		mobileNavContainer = document.getElementById("mobile-nav__container");
@@ -118,11 +139,15 @@ import { Icon } from "astro-icon/components";
 		mobileNavContent = document.getElementById("mobile-nav__content");
 		mobileNavCloseBtn = document.getElementById("mobile-nav__close");
 		mobileNavBackdrop = document.getElementById("mobile-nav__backdrop");
+		mobileNavItems = mobileNavContent?.getElementsByTagName("a");
 
-		if (mobileNavBurger && mobileNavCloseBtn && mobileNavBackdrop) {
+		if (mobileNavBurger && mobileNavCloseBtn && mobileNavBackdrop && mobileNavItems) {
 			mobileNavBurger.addEventListener("click", toggleMobileNav);
 			mobileNavCloseBtn.addEventListener("click", toggleMobileNav);
 			mobileNavBackdrop.addEventListener("click", toggleMobileNav);
+			for (let i = 0; i < mobileNavItems.length; i++) {
+				mobileNavItems[i].addEventListener("click", closeNavOnNavItemClick);
+			}
 		}
 	}
 
