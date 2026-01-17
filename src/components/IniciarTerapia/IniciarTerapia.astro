@@ -1,13 +1,48 @@
 ---
+const reasons = [
+	{
+		title: "Desde el principio, claridad",
+		description: "En nuestra primera sesión sabrás en qué va a consistir el proceso y qué esperar.",
+	},
+
+	{
+		title: "Tratamiento personalizado",
+		description: "La terapia se adapta a cada persona, a su historia y a sus objetivos.",
+	},
+	{
+		title: "Formación académica reglada",
+		description:
+			"Estudié el Grado de Psicología en la Universidad Complutense de Madrid y el Máster en Psicología General Sanitaria en la Universidad Camilo José Cela.",
+	},
+	{
+		title: "Terapia basada en la evidencia",
+		description:
+			"Trabajo desde el enfoque cognitivo-conductual y contextual, utilizando técnicas eficaces y efectivas.",
+	},
+	{
+		title: "Acompañamiento profesional y respetuoso",
+		description: "Las sesiones son un espacio seguro, confidencial y libre de juicio.",
+	},
+];
 ---
 
-<section class="site-container scroll-mt-10 py-8 md:py-12">
-	<div class="mx-auto max-w-6xl text-center">
-		<h3 class="h3 text-pretty uppercase">
-			¿Por qué iniciar terapia conmigo?
-		</h3>
-	</div>
-	<div class="grid gap-10 pt-8 md:grid-cols-2 md:pt-12">
-		razones para iniciar terapia
-	</div>
+<section class="site-container scroll-mt-10 pt-8">
+	<!-- <div class="mx-auto max-w-6xl text-center">
+		<h3 class="h3 text-pretty uppercase">¿Por qué iniciar terapia conmigo?</h3>
+	</div> -->
+	<ul class="flex flex-wrap justify-between">
+		<li class="mb-10 text-left sm:flex-[0_0_calc(50%_-_20px)] md:flex-[0_0_calc(33%_-_20px)]">
+			<h3 class="h3 text-primary-500 text-pretty uppercase">¿Por qué iniciar terapia conmigo?</h3>
+		</li>
+		{
+			reasons.map((reason, index) => (
+				<li
+					class="text-left sm:flex-[0_0_calc(50%_-_20px)] md:flex-[0_0_calc(33%_-_20px)] mb-10"
+				>
+					<h4 class="h4 text-primary-800 mb-2 font-medium text-pretty uppercase">{reason.title}</h4>
+					<p class="">{reason.description}</p>
+				</li>
+			))
+		}
+	</ul>
 </section>

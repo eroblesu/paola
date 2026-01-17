@@ -34,7 +34,7 @@ const pricingData: pricingItem[] = [
 	},
 	{
 		name: "Individual",
-		featured: true,
+		featured: false,
 		price: 65,
 		features: [
 			"300+ Professionally Edited Photos",
@@ -60,7 +60,7 @@ const pricingData: pricingItem[] = [
 
 <section id="tarifas" class="mx-auto max-w-6xl scroll-mt-10 px-4 py-8 md:py-12">
 	<div class="mx-auto max-w-6xl text-center">
-		<h2 class="h2 text-pretty uppercase">Tarifas y servicios</h2>
+		<h2 class="h2 text-primary-800 text-pretty uppercase">Tarifas y servicios</h2>
 	</div>
 	<!-- works for 3 pricing plans, adjust grid cols here to support more or less -->
 	<div
@@ -87,7 +87,7 @@ const pricingData: pricingItem[] = [
 							/>
 						</div>
 					</div> */}
-					<div class="border-primary-200 flex h-full flex-col justify-between border-2 pt-10 pb-10">
+					<div class="border-primary-300 flex h-full flex-col justify-between border-2 pt-10 pb-10">
 						<div>
 							<h3 class="h3 text-center">{plan.name}</h3>
 
@@ -105,12 +105,11 @@ const pricingData: pricingItem[] = [
 			))
 		}
 	</div>
-	<p class="mt-6 text-pretty lg:text-lg">
-		* Las sesiones serán abonadas antes del comienzo de las mismas.
-	</p>
-	<p class="mt-1 text-pretty lg:text-lg">
-		* La cancelación o modificación de las citas debe realizarse con al menos 24 horas de antelación. En caso contrario, habrá de abonarse el importe total de la sesión.
-	</p>
+	<!-- <ul class="mt-6 flex flex-col gap-2 px-8 list-image-[url(/images/asterisk.svg)]">
+		<li class="lg:text-lg">Las sesiones serán abonadas antes del comienzo de las mismas.</li>
+		<li class="lg:text-lg">La cancelación o modificación de las citas debe realizarse con al menos 24 horas de
+		antelación. En caso contrario, habrá de abonarse el importe total de la sesión.</li>
+	</ul> -->
 	<!-- 
 	<div class="mt-12 flex justify-center">
 		<Button href="/#contact" variant="outline" class="px-8">Get a quote</Button>

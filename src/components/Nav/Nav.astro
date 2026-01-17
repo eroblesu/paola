@@ -76,7 +76,6 @@ const { startStyle = "default", rest } = Astro.props as Props;
 				// if we have scrolled down the page a bit, adjust colors
 				navbar.classList.add("scrolled");
 				navLogo.classList.add("scrolled");
-				console.log("SCROLLED", navLogo);
 				navbar.classList.remove("initial");
 				navLogo.classList.remove("initial");
 				navCTA?.setAttribute("data-scrolled", "true");
