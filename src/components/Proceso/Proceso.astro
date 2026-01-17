@@ -12,7 +12,7 @@ const { title, description, icon } = Astro.props;
 	<div class="icon flex-shrink-0">
 		{
 			icon ? (
-				<img src={icon} alt={title} class="h-12 w-12 rounded-lg object-cover" />
+				<img title={title} width="48px" height="48px" src={icon} alt={title} class="h-12 w-12 rounded-lg object-cover" loading="lazy" />
 			) : null
 		}
 	</div>
