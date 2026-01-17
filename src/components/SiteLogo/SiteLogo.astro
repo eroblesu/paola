@@ -2,9 +2,20 @@
 import siteData from "@config/siteData.json";
 import logo from "@images/logo-web-new.png";
 import { Image } from "astro:assets";
+
+interface Props {
+	class?: string;
+}
+
+const { class: className } = Astro.props as Props;
 ---
 
-<a class="primary-focus flex items-center align-middle" href="/" aria-label="Home" class="">
+<a
+	class="inherit-size primary-focus flex items-center align-middle"
+	href="/"
+	aria-label="Home"
+	class=""
+>
 	<Image
 		id="site-logo"
 		src={logo}
@@ -12,12 +23,17 @@ import { Image } from "astro:assets";
 		loading="eager"
 		width={600}
 		height={100}
-		class="h-14 w-auto drop-shadow-md"
+		class=`inherit-size drop-shadow-md ${className}`
 	/>
 	<!-- <div class="font-heading-1 text-xl uppercase">{siteData.name}</div> -->
 </a>
 
 <style>
+	.inherit-size {
+		width: inherit;
+		height: inherit;
+	}
+
 	#site-logo.scrolled {
 		filter: brightness(1.2) contrast(1.1) invert(1) hue-rotate(180deg);
 	}
