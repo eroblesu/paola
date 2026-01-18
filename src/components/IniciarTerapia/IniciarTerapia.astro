@@ -31,13 +31,15 @@ const reasons = [
 		<h3 class="h3 text-pretty uppercase">¿Por qué iniciar terapia conmigo?</h3>
 	</div> -->
 	<ul class="flex flex-wrap justify-between">
-		<li class="mb-10 text-left sm:flex-[0_0_calc(50%_-_20px)] md:flex-[0_0_calc(33%_-_20px)]">
+		<li
+			class="order-0 mb-10 text-left sm:flex-[0_0_calc(50%_-_20px)] md:flex-[0_0_calc(33%_-_20px)]"
+		>
 			<h3 class="h3 text-primary-500 text-pretty uppercase">¿Por qué iniciar terapia conmigo?</h3>
 		</li>
 		{
 			reasons.map((reason, index) => (
 				<li
-					class="text-left sm:flex-[0_0_calc(50%_-_20px)] md:flex-[0_0_calc(33%_-_20px)] mb-10"
+					class="mb-10 text-left sm:flex-[0_0_calc(50%_-_20px)] md:flex-[0_0_calc(33%_-_20px)]"
 				>
 					<h4 class="h4 text-primary-800 mb-2 font-medium text-pretty uppercase">{reason.title}</h4>
 					<p class="">{reason.description}</p>
@@ -46,3 +48,42 @@ const reasons = [
 		}
 	</ul>
 </section>
+
+<style>
+	/* Set order for all reason items */
+	/* Mobile order (different for items 2-6) */
+	li:nth-child(2) {
+		order: 1;
+	}
+	li:nth-child(3) {
+		order: 2;
+	}
+	li:nth-child(4) {
+		order: 0; /* "Formación académica" first on mobile */
+	}
+	li:nth-child(5) {
+		order: 3;
+	}
+	li:nth-child(6) {
+		order: 4;
+	}
+
+	/* Desktop order (revert to natural order on md+) */
+	@media (min-width: 768px) {
+		li:nth-child(2) {
+			order: 1;
+		}
+		li:nth-child(3) {
+			order: 2;
+		}
+		li:nth-child(4) {
+			order: 3; /* "Formación académica" back to 3rd */
+		}
+		li:nth-child(5) {
+			order: 4;
+		}
+		li:nth-child(6) {
+			order: 5;
+		}
+	}
+</style>
