@@ -1,4 +1,5 @@
 ---
+import Schema from "@components/Schema/Schema.astro";
 import Seo from "@components/Seo/Seo.astro";
 import siteData from "@config/siteData.json";
 import { type CollectionEntry } from "astro:content";
@@ -23,6 +24,7 @@ import WorkSansVariable from "@fontsource-variable/work-sans/files/work-sans-lat
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width" initial-scale="1.0" />
 <Seo type={type} title={title} description={description} image={image} noindex={noindex} />
+<Schema />
 
 <!-- local font preload for better performance when not using ClientRouter -->
 <link rel="preload" href={WorkSansVariable} as="font" type="font/woff2" crossorigin="anonymous" />

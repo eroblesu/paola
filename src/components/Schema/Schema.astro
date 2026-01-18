@@ -1,0 +1,85 @@
+---
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "@id": "https://www.paolafanjulpsico.com",
+  "name": "Paola Fanjul López",
+  "url": "https://www.paolafanjulpsico.com/",
+  "image": "https://www.paolafanjulpsico.com/_astro/green.DkMHxThg_1CHJbo.webp",
+  "telephone": "+34 623925895",
+  "priceRange": "€€",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Calle Princesa",
+    "addressLocality": "Madrid",
+    "postalCode": "28001",
+    "addressCountry": "ES"
+  },
+  "areaServed": {
+    "@type": "AdministrativeArea",
+    "name": "Madrid"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Servicios de Psicología",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalTherapy",
+          "name": "Terapia individual"
+        },
+        "priceRange": "€€"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalTherapy",
+          "name": "Terapia de pareja"
+        },
+        "priceRange": "€€"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalTherapy",
+          "name": "Tratamiento de ansiedad"
+        },
+        "priceRange": "€€"
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "MedicalTherapy",
+          "name": "Terapia online"
+        },
+        "priceRange": "€€"
+      }
+    ]
+  },
+  "founder": {
+    "@type": "Person",
+    "@id": "https://www.paolafanjulpsico.com/#about",
+    "name": "Paola Fanjul López",
+    "jobTitle": "Psicólogo General Sanitario",
+    "sameAs": [
+      "https://www.linkedin.com/in/paolafanjul",
+      "https://www.doctoralia.es/paola-fanjul"
+    ]
+  },
+  "openingHoursSpecification": {
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday"
+    ],
+    "opens": "09:00",
+    "closes": "20:30"
+  }
+};
+---
+<script type="application/ld+json" set:html={JSON.stringify(schema)}>
+</script>
