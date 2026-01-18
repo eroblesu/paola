@@ -1,49 +1,134 @@
 ---
-title: Privacy Policy
-description: Example privacy policy for Blogsmith! The best starter blog template for Astro.
+title: Política de privacidad
+description: Política de privacidad Paola Fanjul Psicología
 ---
 
-_Last updated on Sep 9, 2023_
+_Última actualización el 18 de enero de 2026_
 
-This privacy policy sets out how Example LLC collects, processes, and uses your Personal Information through your use of our Services.
+En cumplimiento de lo dispuesto en el **Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD)** y en la **Ley Orgánica 3/2018, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD)**, se informa a los usuarios de este sitio web sobre el tratamiento de sus datos personales.
 
-**This is purely for example. Please consult a lawyer for your own privacy policy.**
+---
 
-## Personal Information Collection
+## 1. Responsable del tratamiento
 
-We only collect and use Personal Information to the extent necessary to provide you with the Services. We collect Personal Information for the Website to provide you with a better online experience.
+- **Nombre y apellidos:** Paola Fanjul López
+- **NIF/NIE:** 54366958H
+- **Profesión:** Psicóloga General Sanitaria 
+- **Número de colegiado:** M-41638 
+- **Correo electrónico de contacto:** paolafanjulpsico@gmail.com  
+- **Sitio web:** https://paolafanjulpsico.com
 
-## Personal Information Retention
+---
 
-We keep Personal Information for the shortest time necessary to provide you with Services and to meet all our legal and compliance obligations. To determine this retention period, we take into account (i) the nature of the Personal Information gathered; and (ii) the nature of our legal and compliance obligations. All Personal Information no longer required by us is destroyed and/or erased.
+## 2. Finalidad del tratamiento de los datos
 
-## Personal Data from Third Parties
+Este sitio web tiene una finalidad **meramente informativa**.  
+Actualmente **no se recogen datos personales a través de formularios**, sistemas de reserva ni suscripciones.
 
-We may, from time to time, obtain Personal Information from third parties to enable us to better tailor our Services to you (Third Party Personal Information). When we obtain Third Party Personal Information, we will notify you within one month. If we use or share Third Party Personal Information, we will notify you immediately.
+No obstante, al navegar por el sitio web pueden tratarse **datos técnicos mínimos** con las siguientes finalidades:
 
-## Your Rights
+- Garantizar el correcto funcionamiento del sitio web
+- Mantener la seguridad de la infraestructura
+- Permitir la visualización del contenido
+- Analizar el estado técnico y la indexación del sitio en motores de búsqueda
 
-With respect to Personal Information we hold, you have the following rights:
+---
 
-- Access: You may request from us access to your data that we hold on you.
-- Rectification: If the data we hold on you is inaccurate, you may request that we correct it. If the data we hold is incomplete, you may request that we complete it.
-- Erasure: Subject to certain conditions, you may request that we erase all of the data we hold on you.
-- Restrictions: Subject to certain conditions, you may request that we restrict the processing of data we hold on you.
-- Portability: Subject to certain conditions, you may request that we transfer all the data we hold on you to a third party (including yourself).
-- Objection: Subject to certain conditions, you may object to our processing of your data.
+## 3. Datos tratados
 
-## Minors
+Los datos que pueden tratarse de forma indirecta y técnica son:
 
-We do not knowingly collect information on children under the age of 16 (“Child”). If you become aware that a Child has provided us with Personal Information, please contact us. If we become aware that we have collected Personal Information from a Child without their parent's verifiable authorization to access our Services, we will take steps to remove that information from our servers.
+- Dirección IP
+- Información del navegador y dispositivo
+- Fecha y hora de acceso
+- Registros técnicos de acceso (logs)
 
-## Third Party Links
+Estos datos **no se utilizan para identificar personalmente al usuario**, ni se asocian a perfiles individuales.
 
-Our website contains links to other third-party websites not owned or managed by Example LLC. This privacy policy applies to this website only. If you click a link to a third-party website, the privacy policy of that website will apply. We highly recommend that you read the privacy policies of other websites as they may be different from ours.
+---
 
-## Merger, acquisition, or asset sale
+## 4. Legitimación del tratamiento
 
-If Example LLC is involved in a merger, acquisition, or asset sale, your Personal Information may be transferred.
+La base legal para el tratamiento de los datos es:
 
-## Contact us
+- **Interés legítimo** del responsable en garantizar el funcionamiento, seguridad y visibilidad del sitio web.
+- **Cumplimiento de obligaciones legales** aplicables a servicios digitales.
 
-If you have any questions or suggestions about our privacy policy or want to know more information about Personal Information we hold, please contact us at support@example.com.
+---
+
+## 5. Conservación de los datos
+
+Los datos técnicos se conservan **únicamente durante el tiempo necesario** para:
+
+- Garantizar la seguridad
+- Resolver incidencias técnicas
+- Cumplir con las obligaciones legales
+
+En ningún caso se almacenan durante más tiempo del estrictamente necesario.
+
+---
+
+## 6. Destinatarios de los datos
+
+No se ceden datos personales a terceros, salvo obligación legal.
+
+No obstante, este sitio web utiliza los siguientes **proveedores externos** que pueden tratar datos técnicos en calidad de **encargados del tratamiento**:
+
+### Alojamiento web
+
+Este sitio web se encuentra alojado en:
+
+- **Proveedor:** Vercel Inc.  
+- **Finalidad:** Infraestructura, alojamiento, CDN, seguridad y certificados SSL  
+
+Vercel puede recopilar datos técnicos como direcciones IP y registros de acceso con fines de seguridad y mantenimiento del servicio, conforme a su propia política de privacidad.
+
+---
+
+### Herramientas de posicionamiento
+
+Este sitio web utiliza:
+
+- **Google Search Console**, una herramienta proporcionada por Google LLC, con la finalidad de supervisar la presencia del sitio web en los resultados de búsqueda y detectar errores técnicos.
+
+Google Search Console **no utiliza cookies** ni permite identificar a los usuarios de forma individual.
+
+---
+
+## 7. Transferencias internacionales de datos
+
+Algunos de los proveedores mencionados pueden estar ubicados fuera del Espacio Económico Europeo (por ejemplo, Estados Unidos).
+
+Estas transferencias se realizan conforme a los mecanismos legales previstos en el RGPD, como cláusulas contractuales tipo u otros instrumentos de garantía adecuados.
+
+---
+
+## 8. Derechos de las personas usuarias
+
+Las personas usuarias pueden ejercer los siguientes derechos en relación con sus datos personales:
+
+- Derecho de acceso
+- Derecho de rectificación
+- Derecho de supresión
+- Derecho de limitación del tratamiento
+- Derecho de oposición
+- Derecho a la portabilidad de los datos
+
+Para ejercer estos derechos, el usuario puede enviar una solicitud por escrito al correo electrónico: paolafanjulpsico@gmail.com
+
+Asimismo, si considera que sus derechos no han sido debidamente atendidos, puede presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD): https://www.aepd.es
+
+---
+
+## 9. Política de cookies
+
+Este sitio web **no utiliza cookies propias ni de terceros** con fines analíticos, publicitarios o de seguimiento.
+
+---
+
+## 10. Cambios en la política de privacidad
+
+El responsable se reserva el derecho a modificar la presente política de privacidad para adaptarla a novedades legislativas o cambios en el funcionamiento del sitio web.
+
+---
+
