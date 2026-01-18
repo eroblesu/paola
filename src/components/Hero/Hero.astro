@@ -37,10 +37,11 @@ import { Image } from "astro:assets";
 
 	<!-- hero items -->
 	<div
-		class="site-container xs:py-30 w-full gap-10 py-20 text-center md:px-8 md:py-25 md:text-left lg:py-40 2xl:py-50"
+		id="hero-items"
+		class="site-container flex h-full w-full flex-col items-center justify-center pt-20 pb-10 text-center md:px-8 md:pb-20 md:text-left"
 	>
 		<!-- Hero text -->
-		<div class="text-base-50 my-auto mr-auto max-w-[800px] flex-col">
+		<div class="text-base-50 mr-auto max-w-[800px] flex-col">
 			<h1
 				class="font-heading-1 text-4xl font-semibold text-pretty drop-shadow-[0_2px_2px_rgba(0,0,0,0.4)] md:text-7xl md:leading-tight"
 			>
@@ -66,3 +67,43 @@ import { Image } from "astro:assets";
 		</div>
 	</div>
 </section>
+
+<style>
+	#hero-items {
+		justify-content: center;
+		padding-top: 4rem;
+		padding-bottom: 2rem;
+	}
+
+	@media (min-width: 400px) {
+		#hero-items {
+			justify-content: center;
+			padding-top: 2.5rem;
+			padding-bottom: 6rem;
+		}
+	}
+
+	@media (min-width: 1280px) {
+		#hero-items {
+			justify-content: center;
+			padding-top: 2.5rem;
+			padding-bottom: 10rem;
+		}
+	}
+
+	@media (min-aspect-ratio: 4 / 3) and (max-height: 800px) {
+		#hero-items {
+			justify-content: center;
+			padding-top: 5rem;
+			padding-bottom: 1rem;
+		}
+	}
+
+	@media (min-aspect-ratio: 2 / 1) and (max-height: 700px) {
+		#hero-items {
+			justify-content: flex-start;
+			padding-top: 4rem;
+			padding-bottom: 1rem;
+		}
+	}
+</style>
